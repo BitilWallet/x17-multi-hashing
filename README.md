@@ -1,14 +1,12 @@
-node-multi-hashing
+x17-multi-hashing
 ===============
-
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/zone117x/node-multi-hashing/Node.js%20CI)](https://github.com/zone117x/node-multi-hashing/actions) [![npm](https://img.shields.io/npm/v/multi-hashing)](https://www.npmjs.com/package/multi-hashing)
 
 Cryptocurrency hashing functions for node.js.
 
 
 Algorithms
 ----------
-Supported algorithms: `quark, x11, x13, x16r, x16rv2, nist5, scrypt, scryptn, scryptjane, keccak, bcrypt, skein, groestl, blake, fugue, qubit, hefty1, shavite3, cryptonight, boolberry, sha256d, lbry`, *__and more!__*
+Supported algorithms: `quark, x11, x13, x16r, x16rv2, x17, nist5, scrypt, scryptn, scryptjane, keccak, bcrypt, skein, groestl, blake, fugue, qubit, hefty1, shavite3, cryptonight, boolberry, sha256d, lbry`, *__and more!__*
 
 
 Usage
@@ -25,7 +23,7 @@ Example usage:
 ```javascript
 var multiHashing = require('multi-hashing');
 
-var algorithms = ['quark', 'x11', 'scrypt', 'scryptn', 'keccak', 'bcrypt', 'skein', 'blake'];
+var algorithms = ['quark', 'x11', 'scrypt', 'scryptn', 'keccak', 'bcrypt', 'skein', 'blake', 'x17'];
 
 var data = new Buffer("7000000001e980924e4e1109230383e66d62945ff8e749903bea4336755c00000000000051928aff1b4d72416173a8c3948159a09a73ac3bb556aa6bfbcad1a85da7f4c1d13350531e24031b939b9e2b", "hex");
 
@@ -52,3 +50,4 @@ Credits
 * [scrypt](http://en.wikipedia.org/wiki/Scrypt) - Colin Percival
 * [bcrypt](http://en.wikipedia.org/wiki/Bcrypt) - Niels Provos and David Mazières
 * [X11](http://www.darkcoin.io/), [Hefty1](http://heavycoin.github.io/about.html), [Quark](http://www.qrk.cc/) creators (they just mixed together a bunch of the above algos)
+* [Idan Neeman](https://github.com/Idan-Neeman)
